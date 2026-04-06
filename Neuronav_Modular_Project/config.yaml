@@ -1,0 +1,16 @@
+# Project Paths
+raw_data_dir: "/content/dataset"
+yolo_data_dir: "/content/yolo_dataset"
+weights_output_dir: "Neuronav_Project"
+
+# Model Parameters
+model_type: "yolo11n-seg.pt"
+imgsz: 640
+epochs: 25
+batch_size: 16
+
+# Class Mapping from Auditor (CholecSeg8k unique values to YOLO IDs)
+tool_map:
+  255: 0  # Surgical_Tool_Primary
+  50: 1   # Surgical_Tool_Secondary
+  21: 2   # Anatomical_Structure
